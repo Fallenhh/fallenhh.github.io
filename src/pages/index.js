@@ -1,22 +1,24 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
+import { Helmet } from 'react-helmet'
 
 export default function Home({ data }) {
-  console.log(data)
-  
   return (
     <Layout>
+      <Helmet title="foo" defer="false"/>
       <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
       <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
+            <Link to={node.fields.slug}>
             <h3>
               {node.frontmatter.title}{" "}
               <span>
                 — {node.frontmatter.date}
               </span>
             </h3>
+            </Link>
             <p>{node.excerpt}</p>
           </div>
         ))}
@@ -36,6 +38,9 @@ export const query = graphql`
           frontmatter {
             date
             title
+          }
+          fields {
+            slug
           }
           id
           excerpt

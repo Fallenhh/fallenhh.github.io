@@ -13,6 +13,13 @@ module.exports = {
         path: `${__dirname}/src/`,
       }
     },
-    `gatsby-transformer-remark`
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        excerpt_separator: `<!-- endexcerpt  -->`
+      }
+    },
+    `gatsby-plugin-react-helmet`,
+    
   ],
 }
