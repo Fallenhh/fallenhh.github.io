@@ -1,0 +1,42 @@
+$font-stack:    Helvetica, sans-serif
+$primary-color: #333
+
+@font-face
+   font-family: PlayfairDisplay;
+   src: url(PlayfairDisplay-SemiBold.ttf);
+
+
+body
+  font: 100% $font-stack
+  color: $primary-color
+  background-color: #f7f7ed
+.main-content
+  width: 700px
+  margin: auto
+  .header-container
+    border-bottom: 1px solid green
+  .site-title
+    font: 29px PlayfairDisplay, serif
+    display:block
+    float: left
+  ul
+    list-style-type: none
+    margin: 0
+    padding: 0
+    overflow: hidden
+    display: inline
+    float: right
+
+    li
+      float: left
+
+      a
+        font-size: 22px
+        display: block
+        color: black
+        text-align: center
+        padding: 12px 16px
+        text-decoration: none
+
+        &:hover
+          background-color: #ddd
