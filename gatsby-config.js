@@ -16,8 +16,26 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        excerpt_separator: `<!-- endexcerpt  -->`
-      }
+        excerpt_separator: `<!-- endexcerpt -->`,
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              aliases: {},
+              showLineNumbers: false,
+            },
+          },
+
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              strict: `ignore`,
+            },
+          }
+        ],
+      },
+     
     },
     `gatsby-plugin-react-helmet`,
     {

@@ -3,16 +3,31 @@ title: "Markdown example"
 date: "2020-08-25"
 ---
 
-# h1 Heading 8-)
-## h2 Heading
-### h3 Heading
+a fairly simple markdown example to show the tags that this blog support
+<!-- endexcerpt -->
 #### h4 Heading
 ##### h5 Heading
 ###### h6 Heading
 
+$$
+a^2 + b^2 = c^2
+$$
+
+```javascript
+// In your gatsby-config.js
+plugins: [
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        `gatsby-remark-prismjs`,
+      ]
+    }
+  }
+]
+```
 
 ## Horizontal Rules
-<!-- endexcerpt -->
 ___
 
 ---
@@ -46,12 +61,7 @@ _This is italic text_
 
 Unordered
 
-+ Create a list by starting a line with `+`, `-`, or `*`
 + Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
-    * Ac tristique libero volutpat at
-    + Facilisis in pretium nisl aliquet
-    - Nulla volutpat aliquam velit
 + Very easy!
 
 Ordered
@@ -138,22 +148,7 @@ With a reference later in the document defining the URL location:
 [id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
 
 
-## Plugins
-
-The killer feature of `markdown-it` is very effective support of
-[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
-
-
-### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
-
-> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
->
-> Shortcuts (emoticons): :-) :-( 8-) ;)
-
-see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
-
-
-### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
+## [Footnotes]
 
 Footnote 1 link[^first].
 
@@ -167,10 +162,3 @@ Duplicated footnote reference[^second].
     and multiple paragraphs.
 
 [^second]: Footnote text.
-
-
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
-
-::: warning
-*here be dragons*
-:::

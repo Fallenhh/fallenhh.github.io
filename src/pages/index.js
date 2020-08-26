@@ -1,11 +1,12 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
-import { Helmet } from 'react-helmet'
+import "../styles/postlist.sass"
 
 export default function Home({ data }) {
   return (
     <Layout>
+      <div className="post-list">
       {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id} className="post-item">
             <div>
@@ -16,26 +17,27 @@ export default function Home({ data }) {
                 {node.frontmatter.title}{" "}
               </Link>
             </div>
-            <div dangerouslySetInnerHTML= {{__html: node.excerpt}}></div>
+            <div dangerouslySetInnerHTML= {{__html: node.excerpt}} className="typo"></div>
           </div>
         ))}
+      </div>
     </Layout>
   )
 }
 
 export const query = graphql`
 query MyQuery {
-  allMarkdownRemark {
+  allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
     edges {
       node {
+        excerpt(format: HTML)
+        fields {
+          slug
+        }
         frontmatter {
           date
           title
         }
-        fields {
-          slug
-        }
-        excerpt(format: HTML)
       }
     }
   }
