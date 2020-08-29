@@ -19,11 +19,20 @@ export default function Layout({ children }) {
       </Helmet>
       <div className="main-inner">
         <div className="sidebar">
+          <div className="sidebar-banner"></div>
           <div className="profile-container">
             <img className="profile-pic" src={Avatar} alt="Nameless"/>
           </div>
           <div className="author-container">
             Fallenhh
+          </div>
+          <div className="author-description">
+          悲しみのない自由な空へ 翼はためかせ
+          </div>
+          <div className="social-list">
+            <Link className="social-link" to={"https://twitter.com/Fallenhh2"}> Twitter </Link>
+            <Link className="social-link" to={"https://aemail.com/QWLM"}> Email </Link>
+            <Link className="social-link" to={"https://github.com/Fallenhh"}> Github </Link>
           </div>
         </div>
         <div className="main-content">

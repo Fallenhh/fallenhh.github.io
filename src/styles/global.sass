@@ -19,16 +19,42 @@ body
 .sidebar
   width: 220px
   position: fixed
-  top: 0.2rem
+  top: 0.1rem
+  padding-bottom: 30px
   background: #fff
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12)
-  padding-top: 55px
+  .sidebar-banner
+    height: 2rem
+    margin-bottom: 2rem
+    background-color: #87F4D7
   .profile-container
-    margin: 0 auto
+    margin: auto
     width: 110px
+    margin-bottom: 1rem
     .profile-pic
       border: 1px solid #ddd
       width: 110px
+  .author-container
+    text-align: center
+    margin-bottom: 1rem
+    font-weight: bold
+    font-size: 1.3rem
+  .author-description
+    word-break: break-all
+    margin: auto
+    margin-bottom: 2rem
+    width: 150px
+    color: grey
+    font-size: 0.8rem
+  .social-list
+    margin: 0 auto
+    .social-link
+      text-align: center
+      display: block
+      margin: 0 30px 16px 30px
+      &:hover
+        text-decoration: none
+        color: #000
 .main-content
   background-color: #fff
   width: 700px
@@ -63,6 +89,16 @@ body
         text-align: center
         padding: 12px 16px
         text-decoration: none
-
+        color: #2793e6
+        transition: background-color 0.2s
         &:hover
-          background-color: #ddd
+          background-color: #87F4D7
+          color: #000
+
+@media (max-width: 1000px)
+  .sidebar
+    display: none
+  .main-content
+    width: 100%
+  html
+    font-size: 40px
