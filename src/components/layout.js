@@ -15,6 +15,7 @@ export default function Layout({ children }) {
     <div>
       <Helmet>
         <title> Atelier Fallen </title>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet"></link>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" />
       </Helmet>
       <div className="main-inner">
