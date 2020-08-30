@@ -17,6 +17,7 @@ export default function Layout({ children }) {
         <title> Atelier Fallen </title>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet"></link>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
       </Helmet>
       <div className="main-inner">
         <div className="sidebar">
