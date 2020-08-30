@@ -1,6 +1,7 @@
 ---
 title: "Markdown example"
 date: "2020-08-25"
+hidden: "true"
 ---
 
 a fairly simple markdown example to show the syntax this blog supports
