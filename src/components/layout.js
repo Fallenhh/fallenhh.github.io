@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import "../styles/global.sass"
-import Avatar from "../../static/avatar.jpg"
+// import Avatar from "../../static/avatar.jpg"
 import { Helmet } from "react-helmet"
 
 const ListLink = props => (
@@ -22,7 +22,9 @@ export default function Layout({ children }) {
         <div className="sidebar">
           <div className="sidebar-banner"></div>
           <div className="profile-container">
-            <img className="profile-pic" src={Avatar} alt="Nameless"/>
+            <Link to={"https://sm.ms/image/SIKcUpA5ZQwBCEO"}>
+              <img className="profile-pic" src="https://i.loli.net/2020/08/30/SIKcUpA5ZQwBCEO.jpg" alt="nameless"/>
+            </Link>
           </div>
           <div className="author-container">
             Fallenhh
