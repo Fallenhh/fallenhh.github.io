@@ -14,7 +14,7 @@ export default function Layout({ children }) {
   return (
     <div>
       <Helmet>
-        title={"123"}
+        <title> Atelier Fallen </title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" />
       </Helmet>
       <div className="main-inner">
@@ -27,7 +27,7 @@ export default function Layout({ children }) {
             Fallenhh
           </div>
           <div className="author-description">
-          悲しみのない自由な空へ 翼はためかせ
+            悲しみのない自由な空へ 翼はためかせ
           </div>
           <div className="social-list">
             <Link className="social-link" to={"https://twitter.com/Fallenhh2"}> Twitter </Link>

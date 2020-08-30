@@ -7,9 +7,10 @@ export default function Home({ data }) {
   return (
     <Layout>
       <div className="post-list">
-      {data.allMarkdownRemark.edges.filter(
-        ({node}) => node.frontmatter.hidden !== "true"
-      ).map(({ node }) => (
+      {data.allMarkdownRemark.edges
+      .filter(({node}) => 
+        node.frontmatter.hidden !== "true")
+      .map(({ node }) => (
           <div key={node.id} className="post-item">
             <div>
               <span className="post-date">
@@ -19,7 +20,7 @@ export default function Home({ data }) {
                 {node.frontmatter.title}{" "}
               </Link>
             </div>
-            <div dangerouslySetInnerHTML= {{__html: node.excerpt}} className="typo"></div>
+            <div dangerouslySetInnerHTML= {{__html: node.excerpt}} className="typo post-excerpt"></div>
           </div>
         ))}
       </div>

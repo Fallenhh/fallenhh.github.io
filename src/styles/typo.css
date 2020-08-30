@@ -80,7 +80,8 @@ strong, b {
 }
 
 .typo p, .typo pre, .typo ul, .typo ol, .typo dl, .typo form, .typo hr, .typo table, blockquote {
-  margin-bottom: 1.2em
+  margin-bottom: 1.2em;
+  line-height: 1.8;
 }
 
 h1, h2, h3, h4, h5, h6 {

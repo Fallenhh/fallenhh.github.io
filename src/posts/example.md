@@ -3,7 +3,7 @@ title: "Markdown example"
 date: "2020-08-25"
 ---
 
-a fairly simple markdown example to show the tags that this blog support
+a fairly simple markdown example to show the syntax this blog supports
 <!-- endexcerpt -->
 #### h4 Heading
 ##### h5 Heading
