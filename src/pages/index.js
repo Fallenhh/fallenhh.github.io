@@ -7,7 +7,9 @@ export default function Home({ data }) {
   return (
     <Layout>
       <div className="post-list">
-      {data.allMarkdownRemark.edges.map(({ node }) => (
+      {data.allMarkdownRemark.edges.filter(
+        ({node}) => node.frontmatter.hidden !== "true"
+      ).map(({ node }) => (
           <div key={node.id} className="post-item">
             <div>
               <span className="post-date">
@@ -35,6 +37,7 @@ query MyQuery {
           slug
         }
         frontmatter {
+          hidden
           date
           title
         }
