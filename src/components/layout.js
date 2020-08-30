@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import "../styles/global.sass"
-// import Avatar from "../../static/avatar.jpg"
 import { Helmet } from "react-helmet"
 
 const ListLink = props => (
