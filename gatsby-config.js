@@ -40,11 +40,21 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-sass`,
+      // options: {
+      //   postCssPlugins: [
+      //     require("tailwindcss"),
+      //     require("./tailwind.config.js"), // Optional: Load custom Tailwind CSS configuration
+      //   ],
+      // },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        postCssPlugins: [
-          require("tailwindcss"),
-          require("./tailwind.config.js"), // Optional: Load custom Tailwind CSS configuration
-        ],
+        trackingId: "UA-163679525-1",
+        head: true,
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
+        defer: false,
       },
     },
   ],
