@@ -54,12 +54,6 @@ module.exports = {
       //   ],
       // },
     },
-    { 
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        printRejected: false,
-      }
-    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

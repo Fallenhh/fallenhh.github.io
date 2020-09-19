@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet"
 
 const ListLink = props => (
   <li key={props.to} className="site-link">
-    <Link to={props.to}>{props.children}</Link>
+    <Link className="sitemap-link" to={props.to}>{props.children}</Link>
   </li>
 )
 
