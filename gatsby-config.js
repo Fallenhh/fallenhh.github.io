@@ -5,6 +5,13 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: `Atelier Fallenhh`,
+    description: `Fallenhh's personal Blog, hopes & dreams`,
+    author: `Fallenhh`,
+    keywords: [`blog`],
+    siteUrl: `https://www.fallen.moe`,
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

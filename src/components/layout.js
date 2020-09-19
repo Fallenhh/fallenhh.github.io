@@ -4,7 +4,7 @@ import "../styles/global.sass"
 import { Helmet } from "react-helmet"
 
 const ListLink = props => (
-  <li className="site-link">
+  <li key={props.to} className="site-link">
     <Link to={props.to}>{props.children}</Link>
   </li>
 )
@@ -13,7 +13,6 @@ export default function Layout({ children }) {
   return (
     <div>
       <Helmet>
-        <title> Atelier Fallen </title>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet"></link>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
