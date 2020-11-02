@@ -24,4 +24,4 @@ hidden: "true"
  #### [Raptazure](https://raptazure.github.io/)
 
 
- #### [Labelray](http://labelray.top/)
+ #### [Labelray](https://blog.labelray.top/)
