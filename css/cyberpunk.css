@@ -10814,23 +10814,23 @@ article.article .article-meta {
 }
 article.article .content {
   word-wrap: break-word;
-  font-size: 1.3rem;
-  line-height: 2.2rem;
+  font-size: 1.15rem;
+  line-height: 2rem;
 }
 article.article .content h1 {
-  font-size: 1.9em;
+  font-size: 1.75rem;
 }
 article.article .content h2 {
-  font-size: 1.75em;
+  font-size: 1.6rem;
 }
 article.article .content h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 article.article .content h4 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 article.article .content h5 {
-  font-size: 1.125em;
+  font-size: 1.125rem;
 }
 article.article .content pre {
   font-size: 0.95em;
